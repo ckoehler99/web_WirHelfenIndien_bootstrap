@@ -10,6 +10,10 @@
 @import "components/navbar";
 @import "components/frame";
 
+.navbar-collapse {
+    flex-grow: 0;
+}
+
 .footer-section-meta {
     background-color: #f8f8f8;
     --frame-color: #000000;
