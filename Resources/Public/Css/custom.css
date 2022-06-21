@@ -2,6 +2,9 @@
 /* WVE:  24.10. Innenabstand bei frame-well
 custom.css  verwendete Farben:
 TSVgruen #009120 TSVdunkelgruen= #0080FF  TSVweiss= #ffffff TSVggelb= #ffff00 
+BEVBlau = #0080FF im navbar Menü
+BEVBlau wird hier zu $india_dark_brown = #b66906
+Schriftfarbe weiß #ffffff wird in navbar zu $india red = #f80200
 neuer Rahmen "swRahmen"  nur schwarzer Rahmen, 
 */
 
@@ -166,10 +169,10 @@ a.text-success:hover {
 .flexslider .slides img { width: 100%; display: block; height: auto;}
 
 .navbar-default {
-  /* background-color: #f8f8f8;fast weiss*/
-  background-color: #009120; /*TSVgruen */
+  background-color: #f80200; /* Schriftfarbe india red*/
+  /* background-color: #009120; TSVgruen */
   /*border-color: #e7e7e7;*/
-  border-color: #FFFFFF; /* TSVweiss */
+  border-color: #FFFFFF; /* white */
 }
 /*WVE #f8f8f8 = fast weiss border: #e7e7e7 = etwas dunkleres weiss*/
 .navbar-default .navbar-brand {
@@ -179,15 +182,14 @@ a.text-success:hover {
 }
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
-  color: #009120; /* TSVgruen #009120 */
+  color: #f80200; /* india red */
   background-color: transparent;
 }
 /*WVE #5e5e5e = grau   #777777= helleres grau
 ersetzt durch TSV-gruen #009120 und #0080FF TSVdunkelgruen
 */
 .navbar-default .navbar-text {
-  /* WVE color: #777777; mittelgrau zu TSVweiss #FFFFFF*/
-  color: #ffffff;
+  color: #ffffff; /* white*/
 }
 
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
@@ -197,17 +199,17 @@ ersetzt durch TSV-gruen #009120 und #0080FF TSVdunkelgruen
 
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-  color: #FFFFFF;/* Textfarbe TSVweiss bei Mouse over*/
+  color: #f80200;/* Textfarbe india red bei Mouse over*/
   background-color: transparent;
 }
-/*WVE #333333 = dunkelgrau ersetzt durch TSVdunkelgruen #0080FF*/
+
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
-  color: #FFFFFF; /* Textfarbe TSVweiss*/
-  background-color: #0080FF; /* Hintergrund TSVdunkelgruen*/
+  color: #f80200; /* Textfarbeindia red*/
+  background-color: #ffe0b8; /* Hintergrund india_light_brown*/
   /* WVE color: #555555 mittelgrau   background-color: #e7e7e7 etwas dunkleres weiss;
-  ersetzt durch #0080FF TSVdunkelgruen und Textfarbe TSVgelb #FFFF00
+  ersetzt durch india_light_brown = #ffe0b8 und Textfarbe india red = #f80200
   */
 }
 /*WVE #555555= grau  #e7e7e7 = etwas dunkleres weiss*/
@@ -229,7 +231,7 @@ ersetzt durch TSV-gruen #009120 und #0080FF TSVdunkelgruen
 /*WVE #dddddd= hellgrau  ; #888888=mittelgrau*/
 
 .navbar-default .navbar-toggle .icon-bar {
-  background-color: #ffffff; /*statt #888888   TSVweiss= #ffffff*/
+  background-color: #f80200; /*india red*/
 }
 .navbar-default .navbar-collapse,
 .navbar-default .navbar-form {
@@ -242,8 +244,8 @@ ersetzt durch TSV-gruen #009120 und #0080FF TSVdunkelgruen
 .navbar-default .navbar-nav > .open > a:focus {
   /*background-color: #e7e7e7; etwas dunkleres weiss
                color: #555555;  grau*/
-  background-color: #0080FF; /*TSVdunkelgruen #0080FF*/
-  color: #FFFF00; /* Schrift=TSVgelb*/
+  background-color: #ffe0b8; /*india_light_brown*/
+  color: #f80200; /* Schrift=india red*/
 }
 
 @media (max-width: 767px) {
@@ -253,7 +255,7 @@ ersetzt durch TSV-gruen #009120 und #0080FF TSVdunkelgruen
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
    /* color: #333333; -> TSVdunkelgruen #0080FF*/
-  background-color: #0080FF; /*TSVdunkelgruen #0080FF*/
+  background-color: #ffe0b8; /*TSVdunkelgruen #0080FF*/
   }
 /*WVE #333333= dunkelgrau  ; #777777=mittelgrau
     #333333 ersetzt durch #0080FF und #009120 TSV-gruen und TSV-dunkleres gruen
@@ -261,9 +263,8 @@ ersetzt durch TSV-gruen #009120 und #0080FF TSVdunkelgruen
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
-   color: #333333; /* TSVdunkelgruen #0080FF ??*/
-     background-color: #0080FF;  /* testfarbe dunkellila*/
-    /*background-color: #FFFF00;  gelb*/
+   color: #333333; 
+     background-color: #ffe0b8;  /* india red*/
   }
   /* WVE color: #555555 mittelgrau   background-color: #e7e7e7 etwas dunkleres weiss;
   ersetzt durch #0080FF TSVgruen und Textfarbe gelb #FFFF00
@@ -273,7 +274,7 @@ ersetzt durch TSV-gruen #009120 und #0080FF TSVdunkelgruen
   .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:focus {
     /* color: #cccccc;  hellgrau*/
     color: #cccccc;
-   background-color: #0080FF;
+   background-color: #ffe0b8; /* india liegt brown */
   }
 }
 .navbar-default .navbar-link {
