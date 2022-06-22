@@ -1,8 +1,9 @@
 /* WVE 21.06.20222 für Indien auf Basis TSV und BEV
-/* custom.css  verwendete Farben:
+/* custom.css  verwendete ursprünglich die Farben:
 TSVgruen #009120 TSVdunkelgruen= #0080FF  TSVweiss= #ffffff TSVggelb= #ffff00 
-BEVblau = #0080FF im navbar Menü
-Indien:  navbar background-color: #ffe0b8; Hintergrund india_light_brown
+BEVblau = #0080FF im navbar Menü */
+/* 
+Indien:  navbar background-color: #ffe0b8; = Hintergrund india_light_brown
 Menü-Textfarbe:   india red = #f80200
 */
 
@@ -169,18 +170,15 @@ a.text-success:hover {
   background-color: #ffe0b8; /*india_light_brown */
   border-color: #FFFFFF; /* weiss */
 }
-
 .navbar-default .navbar-brand {
-  /* WVE color: TSVgruen #009120 */
-  color:#ffe0b8; /*india_light_brown */
-  
+  color:#ffe0b8; /*india_light_brown */ 
 }
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
   color:#ffe0b8; /*india_light_brown */
   background-color: transparent;
 }
-/*WVE TSV-gruen #009120 */
+
 .navbar-default .navbar-text {
   color: #f80200  /*india red */
 }
@@ -192,16 +190,15 @@ a.text-success:hover {
 
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-    color: #f80200  /*india red bei Mouse over*/
+  color: #f80200;/* Textfarbe india red bei Mouse over*/
   background-color: transparent;
 }
 
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
-    color: #f80200  /*india red */
-  background-color:  color:#ffe0b8; /*india_light_brown */
- 
+ color: #f80200;      /*india red */
+ background-color: #ffe0b8; /*india_light_brown */
 }
 
 .navbar-default .navbar-nav > .disabled > a,
@@ -230,8 +227,7 @@ a.text-success:hover {
 .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .open > a:hover,
 .navbar-default .navbar-nav > .open > a:focus {
-  /*background-color: #e7e7e7; etwas dunkleres weiss
-               color: #555555;  grau*/
+  /*background-color: #e7e7e7; etwas dunkleres weiss              color: #555555;  grau*/
   background-color:  color:#ffe0b8; /*india_light_brown */
   color: #f80200  /*india red */
 }
@@ -248,15 +244,15 @@ a.text-success:hover {
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
-   backgroundcolor: #b66906; /* india_dark_brown*/
+   background-color: #b66906; /* india_dark_brown*/
    color: #f80200  /*india red */
   }
  
   .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a,
   .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:hover,
   .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:focus {
-   backgroundcolor:#b66906; /*india_dark_brown */
-     color: #f80200  /*india red */
+    color: #f80200;  /*india red */
+    background-color: #ffe0b8; /* india liegt brown */
   }
 }
 .navbar-default .navbar-link {
