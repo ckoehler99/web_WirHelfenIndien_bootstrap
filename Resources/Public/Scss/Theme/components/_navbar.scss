@@ -2,8 +2,8 @@
 // Brand
 // --------------------------------------------------
 
-$navbar-light-color:                $india_red; /*BEV: #0080FF;*/
-$navbar-light-active-color:         #ababab; /* grau*/
+$navbar-light-color:                #0080FF; /* $india_red; /*BEV: #0080FF;*/
+$navbar-light-active-color:         $gray-500; /* #ababab grau*/
 $navbar-light-brand-hover-color:    $india_light_brown;  /*BEV: #0080FF;*/
 
 .navbar-collapse {
@@ -17,12 +17,12 @@ $navbar-light-brand-hover-color:    $india_light_brown;  /*BEV: #0080FF;*/
 .navbar-default .navbar-nav > .active > a, 
 .navbar-default .navbar-nav > .active > a:hover, 
 .navbar-default .navbar-nav > .active > a:focus {
-    color: #FFFFFF;
+    color: $white;
     background-color: $india_light_brown; /* BEV: #0080FF;*/ 
 }
 
 .dropdown-item.active, .dropdown-item:active {
-    color: #ffffff;
+    color: $warning  /*#ffffff;*/
     background-color: $india_light_brown; /* BEV: #0080FF;*/
 }
 
