@@ -1,12 +1,11 @@
-/* 08.03.2021 WVE frame 33/66 neu definiert*/﻿
-/* WVE:  24.10. Innenabstand bei frame-well
-custom.css  verwendete Farben:
+/* WVE 21.06.20222 für Indien auf Basis TSV und BEV
+/* custom.css  verwendete Farben:
 TSVgruen #009120 TSVdunkelgruen= #0080FF  TSVweiss= #ffffff TSVggelb= #ffff00 
-BEVBlau = #0080FF im navbar Menü
-BEVBlau wird hier zu $india_dark_brown = #b66906
-Schriftfarbe weiß #ffffff wird in navbar zu $india red = #f80200
-neuer Rahmen "swRahmen"  nur schwarzer Rahmen, 
+BEVblau = #0080FF im navbar Menü
+Indien:  navbar background-color: #ffe0b8; Hintergrund india_light_brown
+Menü-Textfarbe:   india red = #f80200
 */
+
 
 body {
   padding: 20px 0px;
@@ -81,46 +80,45 @@ footer .container .row {
   top: -1px;
 }
 .label-default {
-  background-color: #777777;
+  background-color: #777777; /* grau */
 }
 .label-default[href]:hover,
 .label-default[href]:focus {
   background-color: #5e5e5e;
 }
 .label-primary {
-  background-color: #428bca;
+  background-color: #428bca; /* blau */
 }
 .label-primary[href]:hover,
 .label-primary[href]:focus {
-  background-color: #3071a9;
+  background-color: #3071a9; /* etwas dunkleres blau */
 }
 .label-success {
   background-color: #5cb85c;
 }
 .label-success[href]:hover,
 .label-success[href]:focus {
-  background-color: #449d44;
+  background-color: #449d44; /* gras grün */
 }
 .label-info {
- /* background-color: #5bc0de; 23.10.18 WVe*/
 }
 .label-info[href]:hover,
 .label-info[href]:focus {
-  background-color: #31b0d5;
+  background-color: #31b0d5; /* hell blau*/
 }
 .label-warning {
-  background-color: #f0ad4e;
+  background-color: #f0ad4e; /* gold braun*/
 }
 .label-warning[href]:hover,
 .label-warning[href]:focus {
-  background-color: #ec971f;
+  background-color: #ec971f; /* dunkleres gold braun*/
 }
 .label-danger {
   background-color: #d9534f;
 }
 .label-danger[href]:hover,
 .label-danger[href]:focus {
-  background-color: #c9302c;
+  background-color: #c9302c; /* rot*/
 }
 
 
@@ -131,8 +129,7 @@ footer .container .row {
   margin-left: 15px
   border: 1px solid #0C2CBB;  /* BEV dunkelblau */
   border-radius: 4px;
-  /*background-color: #f0f0c0; blass gelb */
-  background-color: #FDEED2;   /*BEV hellbraun*/
+   background-color: #FDEED2;   /*BEV hellbraun */
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
   box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.05);
 }
@@ -142,7 +139,7 @@ footer .container .row {
 }
 .frame-intend-left-lg {
   padding: 24px;  /*Innenabstand */
-  background-color: #FDEED2; /*   BEV hellbraun*/
+  background-color: #ffe0b8; /*   india_light_brown*/
   border-radius: 6px;
 }
 .frame-intend-left-sm {
@@ -151,7 +148,7 @@ footer .container .row {
   background-color: #C9FEC2;  /* blassgruen*/
 }
 
-/* #eirücken # */
+/* #einrücken # */
 .frame-indent  { 
   color: inherit;
   margin-left: 15%; margin-right: 15%;/* zentriert*/
@@ -169,27 +166,23 @@ a.text-success:hover {
 .flexslider .slides img { width: 100%; display: block; height: auto;}
 
 .navbar-default {
-  background-color: #f80200; /* Schriftfarbe india red*/
-  /* background-color: #009120; TSVgruen */
-  /*border-color: #e7e7e7;*/
-  border-color: #FFFFFF; /* white */
+  background-color: #ffe0b8; /*india_light_brown */
+  border-color: #FFFFFF; /* weiss */
 }
-/*WVE #f8f8f8 = fast weiss border: #e7e7e7 = etwas dunkleres weiss*/
+
 .navbar-default .navbar-brand {
-  /* WVE color: #777777; mittelgrau zu TSVgruen #009120 */
-  color: #009120;
+  /* WVE color: TSVgruen #009120 */
+  color:#ffe0b8; /*india_light_brown */
   
 }
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
-  color: #f80200; /* india red */
+  color:#ffe0b8; /*india_light_brown*/ 
   background-color: transparent;
 }
-/*WVE #5e5e5e = grau   #777777= helleres grau
-ersetzt durch TSV-gruen #009120 und #0080FF TSVdunkelgruen
-*/
+/*WVE TSV-gruen #009120 */
 .navbar-default .navbar-text {
-  color: #ffffff; /* white*/
+  color: #f80200  /*india red */
 }
 
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
@@ -199,97 +192,85 @@ ersetzt durch TSV-gruen #009120 und #0080FF TSVdunkelgruen
 
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-  color: #f80200;/* Textfarbe india red bei Mouse over*/
+    color: #f80200  /*india red bei Mouse over*/
   background-color: transparent;
 }
 
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
-  color: #f80200; /* Textfarbeindia red*/
-  background-color: #ffe0b8; /* Hintergrund india_light_brown*/
-  /* WVE color: #555555 mittelgrau   background-color: #e7e7e7 etwas dunkleres weiss;
-  ersetzt durch india_light_brown = #ffe0b8 und Textfarbe india red = #f80200
-  */
+    color: #f80200  /*india red */
+  background-color:  color:#ffe0b8; /*india_light_brown */
+ 
 }
-/*WVE #555555= grau  #e7e7e7 = etwas dunkleres weiss*/
+
 .navbar-default .navbar-nav > .disabled > a,
 .navbar-default .navbar-nav > .disabled > a:hover,
 .navbar-default .navbar-nav > .disabled > a:focus {
-  color: #cccccc;
+  color: #cccccc; /* hellgrau */
   background-color: transparent;
 }
-/*WVE #cccccc= hellgrau, aber dunkler als #e7e7e7  */
 
 .navbar-default .navbar-toggle {
   border-color: #dddddd;
 }
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
-  background-color: #dddddd;
+  background-color: #dddddd; /* hellgrau   */
 }
-/*WVE #dddddd= hellgrau  ; #888888=mittelgrau*/
 
 .navbar-default .navbar-toggle .icon-bar {
-  background-color: #f80200; /*india red*/
+  background-color: #ffffff; /* weiss*/
 }
 .navbar-default .navbar-collapse,
 .navbar-default .navbar-form {
-  border-color: #e7e7e7;
+  border-color: #e7e7e7; /* etwas dunkleres weiss */
 }
-/*WVE #e7e7e7= etwas dunkleres weiss  ; #888888=mittelgrau*/
 
 .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .open > a:hover,
 .navbar-default .navbar-nav > .open > a:focus {
   /*background-color: #e7e7e7; etwas dunkleres weiss
                color: #555555;  grau*/
-  background-color: #ffe0b8; /*india_light_brown*/
-  color: #f80200; /* Schrift=india red*/
+  background-color:  color:#ffe0b8; /*india_light_brown */
+  color: #f80200  /*india red */
 }
 
 @media (max-width: 767px) {
   .navbar-default .navbar-nav .open .dropdown-menu > li > a {
-    background-color: #0080FF; /*TSVdunkelgruen #0080FF*/
+    background-color: #ffe0b8; /*india_light_brown */
   }
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
-   /* color: #333333; -> TSVdunkelgruen #0080FF*/
-  background-color: #ffe0b8; /*TSVdunkelgruen #0080FF*/
+   backgroundcolor:#ffe0b8; /*india_light_brown */
   }
-/*WVE #333333= dunkelgrau  ; #777777=mittelgrau
-    #333333 ersetzt durch #0080FF und #009120 TSV-gruen und TSV-dunkleres gruen
-    OK */
+
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
-   color: #333333; 
-     background-color: #ffe0b8;  /* india red*/
+   backgroundcolor: #b66906; /* india_dark_brown*/
+   color: #f80200  /*india red */
   }
-  /* WVE color: #555555 mittelgrau   background-color: #e7e7e7 etwas dunkleres weiss;
-  ersetzt durch #0080FF TSVgruen und Textfarbe gelb #FFFF00
-  */
+ 
   .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a,
   .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:hover,
   .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:focus {
-    /* color: #cccccc;  hellgrau*/
-    color: #cccccc;
-   background-color: #ffe0b8; /* india liegt brown */
+   backgroundcolor:#b66906; /*india_dark_brown */
+     color: #f80200  /*india red */
   }
 }
 .navbar-default .navbar-link {
-  /*color: #777777; mittelgrau*/
-    color: #1E021D; /* testfarbe dunkellila*/
+  color: #0080FF; /* BEVblau für Link*/
 }
 .navbar-default .navbar-link:hover {
-  color: #333333;/* #333333 dunkelgrau zu TSVdunkelgruen #0080FF*/
+  color: #ffe0b8; /*india_light_brown */
 }
 .navbar-default .btn-link {
-  color: #777777;/* #777777 mittelgrau wird TSVdunkelgruen #0080FF*/
+  color: #0080FF; /* BEVblau für Link*/
 }
 .navbar-default .btn-link:hover,
 .navbar-default .btn-link:focus {
-  color: #333333;/* #333333 dunkelgrau zu TSVdunkelgruen #0080FF*/
+  color: #0080FF; /* BEVblau für Link*/
 }
 .navbar-default .btn-link[disabled]:hover,
 fieldset[disabled] .navbar-default .btn-link:hover,
@@ -299,7 +280,7 @@ fieldset[disabled] .navbar-default .btn-link:focus {
 }
 
 footer .container .row  {
-  /*background-color: #FBFBFB; elfenbein ersetzt durch e7e7e7*/
+  /*background-color: elfenbein ersetzt durch e7e7e7*/
   background-color:#e7e7e7;
   }
 
