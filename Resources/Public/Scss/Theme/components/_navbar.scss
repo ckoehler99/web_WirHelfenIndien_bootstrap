@@ -18,7 +18,7 @@ $navbar-light-brand-hover-color:     #0080FF;  /*BEV: $india_light_brown;*/
 .navbar-default .navbar-nav > .active > a:hover, 
 .navbar-default .navbar-nav > .active > a:focus {
     color: $white;
-    background-color: $india_light_brown; /* BEV: #0080FF;*/ 
+    background-color: #0080FF; /*$india_light_brown; BEV: */ 
 }
 
 .dropdown-item.active, .dropdown-item:active {
