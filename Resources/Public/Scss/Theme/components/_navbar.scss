@@ -17,8 +17,8 @@ $navbar-light-brand-hover-color:   $primary;  /*BEV:#0080FF  $india_light_brown;
 .navbar-default .navbar-nav > .active > a, 
 .navbar-default .navbar-nav > .active > a:hover, 
 .navbar-default .navbar-nav > .active > a:focus {
-    color: $white;
-    background-color:   $india_dark_brown; /*BEV: #0080FF*/ 
+    color: $india_red;
+    background-color:   $india_light_brown; /*BEV: #0080FF*/ 
 }
 
 .dropdown-item.active, .dropdown-item:active {
@@ -27,5 +27,6 @@ $navbar-light-brand-hover-color:   $primary;  /*BEV:#0080FF  $india_light_brown;
 }
 
 .navbar-mainnavigation .navbar-nav>li>.nav-link:before {
-    background-color:  $tertiary; /*$india_light_brown;  $BEVblue*/ 
+   color: $india_red;
+    background-color:  $india_light_brown; /*  $BEVblue*/ 
 }
