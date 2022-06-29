@@ -22,25 +22,6 @@
     border-color: #ddd; /* gold gelb*/
     border-color: rgba(0, 0, 0, 0.15);
   }
-.frame-swRahmen  { 
-    margin-left: 0%; margin-right: 0%;/* ohne Einrücken*/
-    background-color: #FFFFFF;   /* weiß */
-    border: 1px solid #000000;  /* sw */
-    border-radius: 4px;
-    padding: 3px; /* Innenabstand */
-  }
-  
-.frame-hellblau  { /* 16.03.2021 WVe*/
-    min-height: 20px;
-    padding: 6px;   /* innenabstand*/
-    margin-bottom: 12px;
-    border: 1px solid #0C2CBB;  /* BEV dunkelblau */
-    border-radius: 3px;
-    background-color: #DBFFFF;  /* hellblau*/
-              /*background-color: #FDEED2;   BEV hellbraun*/
-    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
-    box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.05);
-    }
 
 .frame-well-lg {
     padding: 24px;  /*Innenabstand */
@@ -53,12 +34,30 @@
     border-radius: 3px;
     background-color: #C9FEC2;  /* blassgruen*/
     }
+.frame-swRahmen  { 
+    margin-left: 0%; margin-right: 0%;/* ohne Einrücken*/
+    background-color: #FFFFFF;   /* weiß */
+    border: 1px solid #000000;  /* sw */
+    border-radius: 4px;
+    padding: 3px; /* Innenabstand */
+  }
+  
+.frame-hellblau  { 
+    min-height: 20px;
+    padding: 6px;   /* innenabstand*/
+    margin-bottom: 12px;
+    border: 1px solid #0C2CBB;  /* BEV dunkelblau */
+    border-radius: 3px;
+    background-color: #DBFFFF;  /* hellblau*/
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+    box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.05);
+    }
 
 .frame-jumbotron {
     padding: 6px;
     margin-bottom: 6px;  /*Bodenabstand */
     color: inherit;
-    background-color: #ffe0b8;  /* $india_light_brown*/
+    background-color: #ffefdb;  /* heller als india_light_brown*/
     border: 2px solid #b66906;  /* $india_dark_brown */
     border-radius: 6px;
     }
