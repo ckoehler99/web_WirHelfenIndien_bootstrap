@@ -2,7 +2,7 @@
     "name": "WirHelfenIndien/WirHelfenIndien-bootstrap",
     "type": "typo3-cms-extension",
     "description": "",
-    "homepage": "https://wive-wartenberg.de/",
+    "homepage": "https://schritt-fuer-schritt-ev.de/",
     "license": ["GPL-2.0-or-later"],
     "keywords": ["TYPO3 CMS"],
     "require": {
